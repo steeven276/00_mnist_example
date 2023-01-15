@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow.keras.layers import Conv2D, Input, Dense, MaxPool2D, BatchNormalization, GlobalAvgPool2D
 
+#Import the necessary functions
 from deep_learning_model import functional_model, MyCustomModel
 from my_utils import display_some_examples
 
