@@ -1,6 +1,9 @@
 import tensorflow
 from tensorflow.keras.layers import Conv2D, Input, Dense, MaxPool2D, BatchNormalization, GlobalAvgPool2D
 
+
+# The functional way to define the model. This is a model we want to use in a bigger project.
+# Indeed, we could use parameters and provides flexibility
 def functional_model():
     my_input=Input(shape=(28,28,1))
     
@@ -22,7 +25,9 @@ def functional_model():
 
     return model
 
-# tensorflow.keras.Model: inherit from this class
+
+# This is a method that I will learn later
+
 class MyCustomModel(tensorflow.keras.Model):
     def __init__(self)->None:
         super().__init__()

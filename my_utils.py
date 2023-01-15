@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Function to display random examples of our dataset
 def display_some_examples(examples, labels):
     plt.figure(figsize=(10,10))
 
